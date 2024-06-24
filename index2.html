@@ -95,9 +95,9 @@
     <nav aria-label="...">
         <ul class="pagination pagination-sm justify-content-center">
 
-            <li class="page-item"><a class="page-link" href="/index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="/index.html"><i class="fa-solid fa-table-cells"></i></a></li>
             <li class="page-item active" aria-current="page">
-                <span class="page-link">2</span>
+                <span class="page-link"><i class="fa-solid fa-square"></i></span>
             </li>
         </ul>
     </nav>
@@ -114,7 +114,7 @@
                 <img src="https://fastly.picsum.photos/id/57/620/620.jpg?hmac=FU2OQon8558rFG83Ya8UtPo3W5VuKGx0RPENJ7udAvU"
                     alt="" width="480px" height="600px">
                 <div class="card-body">
-                    <h4 id="random" class="card-title"></h4><h4 class="card-title"> LIKES</h4>
+                    <div style="display: flex;"><h4 id="random1" class="card-title" style="width: fit-content;"></h4><div style="width: 5px;"></div><h4 class="card-title" style="width: fit-content;"> LIKES</h4></div>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
@@ -125,32 +125,30 @@
 
             <div class="card " style="width: 480px;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
                 </div>
                 <img src="https://fastly.picsum.photos/id/731/620/620.jpg?hmac=UnsmQEWNNgWKxCdTozuOXlQt-zk9Ejix93E_x3Es84s"
                     alt="" width="480px" height="600px">
                 <div class="card-body">
+                    <div style="display: flex;"><h4 id="random2" class="card-title" style="width: fit-content;"></h4><div style="width: 5px;"></div><h4 class="card-title" style="width: fit-content;"> LIKES</h4></div>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                 </div>
             </div>
 
+
             <div class="col-4" style="height: 30px;"></div>
+
 
             <div class="card " style="width: 480px;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
                 </div>
                 <img src="https://fastly.picsum.photos/id/765/620/620.jpg?hmac=kybGtcZAe2XFINWMIgunq-swZXZwaGm23QQOYA-CEmY"
                     alt="" width="480px" height="600px">
                 <div class="card-body">
+                    <div style="display: flex;"><h4 id="random3" class="card-title" style="width: fit-content;"></h4><div style="width: 5px;"></div><h4 class="card-title" style="width: fit-content;"> LIKES</h4></div>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
@@ -161,14 +159,22 @@
 
         </div>
 
-
-
-
-
-
     </div>
 
+    <script>
+        window.onload = () => {
+            document.querySelector("#random1").innerHTML = random();
+            document.querySelector("#random2").innerHTML = random();
+            document.querySelector("#random3").innerHTML = random();
+    };
+              const random = () => {
+                let a = Math.floor(Math.random() * 1000);
+                console.log(a);
+                return a
+            };
 
+
+            </script>
 
 
 
