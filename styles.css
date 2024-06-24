@@ -2,10 +2,3 @@
 .fa-gear {
     font-size: 30px;
 }
-
-.center {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
